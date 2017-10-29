@@ -10,7 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import mario.ochoa.bbva.Fragments.AjustesFragment;
 import mario.ochoa.bbva.Fragments.InicioFragment;
+import mario.ochoa.bbva.Fragments.PrestamosFragment;
+import mario.ochoa.bbva.Fragments.ProgresoFragment;
+import mario.ochoa.bbva.Fragments.TerminosFragment;
 import mario.ochoa.bbva.R;
 
 public class DrawerActivity extends AppCompatActivity {
@@ -55,9 +59,21 @@ public class DrawerActivity extends AppCompatActivity {
                         fragment = new InicioFragment();
                         fragmentTransaction = true;
                         break;
-                    case R.id.opcion_2:
-                        fragment = new InicioFragment();
+                    case R.id.progreso:
+                        fragment = new ProgresoFragment();
                         fragmentTransaction = true;
+                        break;
+                    case R.id.prestamos:
+                        fragment = new PrestamosFragment();
+                        fragmentTransaction = true;
+                        break;
+                    case R.id.terminos:
+                        fragment = new TerminosFragment();
+                        fragmentTransaction =true;
+                        break;
+                    case R.id.settings:
+                        fragment = new AjustesFragment();
+                        fragmentTransaction =true;
                         break;
 
                 }

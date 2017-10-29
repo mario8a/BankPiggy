@@ -1,21 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="mario.ochoa.bbva.Fragments.InicioFragment">
+    android:orientation="vertical"
+    tools:context="mario.ochoa.bbva.Fragments.TerminosFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
 
     <!-- TODO: Update blank fragment layout -->
-
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"></include>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Fragmento principal"
-        android:textSize="30dp"
+        android:text="Términos y condiciones"
         android:textAlignment="center"
+        android:textSize="30dp"/>
 
-        />
+
 
 </LinearLayout>

@@ -4,18 +4,33 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/inicio"
-            android:icon="@android:drawable/btn_star"
-            android:title="@string/app_name"/>
+            android:icon="@drawable/ic_home"
+            android:title="Inicio"/>
 
         <item
-            android:id="@+id/opcion_2"
-            android:icon="@android:drawable/btn_star"
-            android:title="opcion 2"/>
+            android:id="@+id/progreso"
+            android:icon="@drawable/ic_increase"
+            android:title="Progreso mensual"/>
+
+
 
         <item
-            android:id="@+id/categorias"
-            android:icon="@android:drawable/btn_star"
-            android:title="opcion 3"/>
+            android:id="@+id/prestamos"
+            android:icon="@drawable/ic_prestamos"
+            android:title="Prestamos"/>
+
+
+
+        <item
+            android:id="@+id/terminos"
+            android:icon="@drawable/ic_terms"
+            android:title="Términos y condiciones"/>
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Ajustes"/>
+
 
 
     </group>
