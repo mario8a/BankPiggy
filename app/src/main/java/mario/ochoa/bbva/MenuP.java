@@ -30,7 +30,7 @@ public class MenuP extends AppCompatActivity {
     private BluetoothAdapter btAdapter = null;
     private BluetoothSocket btSocket = null;
     private StringBuilder DataStringIN = new StringBuilder();
-    private ConnectedThread  MyconexionBT;
+    //private ConnectedThread  MyconexionBT;
 
     private static final UUID BTMODULEUUID = UUID.fromString("");
     public static String address = null;
@@ -108,8 +108,8 @@ public class MenuP extends AppCompatActivity {
                 btSocket.close();
             }catch (IOException e2){}
         }
-        MyconexionBT = new ConnectedThread(btSocket);
-        MyconexionBT.start();
+        //MyconexionBT = new ConnectedThread(btSocket);
+        //MyconexionBT.start();
     }
 
     @Override
@@ -133,8 +133,8 @@ public class MenuP extends AppCompatActivity {
         }
     }
 
-    private class ConnectedThread extends Thread{
+    /*private class ConnectedThread extends Thread{
         private final InputStream mmInStream;
-        private final OutputStream mmOutput
-    }
+        private final OutputStream mmOutput;
+    }*/
 }
